@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<query name="HQL_GET_ALL_EMPLOYES">
+	<![CDATA[from Employes]]>
+	</query>
+
+	<query name="HQL_GET_EMPLOYES_BY_MAT">
+		<![CDATA[from Employes where mat = :mat]]>
+	</query>
+
+	<query name="HQL_GET_EMPLOYES_BY_SAL">
+		<![CDATA[from Employes where sal > :salary]]>
+	</query>
+	<query name="HQL_GET_EMPLOYES_BY_SAL2">
+		<![CDATA[from Employes where sal between :vmin and :vmax]]>
+	</query>
+	<sql-query name="SQL_GET_ALL_EMPLOYES">
+		<![CDATA[select * from Employes]]>
+	</sql-query>
+	
+	
+</hibernate-mapping>
+
+
+
