@@ -8,17 +8,17 @@
 	</query>
 
 	<query name="HQL_GET_EMPLOYES_BY_MAT">
-		<![CDATA[from Employes where mat = :mat]]>
+		<![CDATA[from Employe where mat = :mat]]>
 	</query>
 
 	<query name="HQL_GET_EMPLOYES_BY_SAL">
-		<![CDATA[from Employes where sal > :salary]]>
+		<![CDATA[from Employe where sal > :salary]]>
 	</query>
 	<query name="HQL_GET_EMPLOYES_BY_SAL2">
-		<![CDATA[from Employes where sal between :vmin and :vmax]]>
+		<![CDATA[from Employe where sal between :vmin and :vmax]]>
 	</query>
 	<sql-query name="SQL_GET_ALL_EMPLOYES">
-		<![CDATA[select * from Employes]]>
+		<![CDATA[select * from Employe]]>
 	</sql-query>
 	
 	
